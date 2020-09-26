@@ -8,130 +8,255 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
+
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
 </head>
 
 <body>
+
+  <!-- Navigation Menu Desktop Navigation-->
+
   <div>
-    <nav>
-      <div>
-        <img src="/images/logo.svg" alt="Logo Shortly">
-        <nav>
-          <ul class="nav_list">
+    <nav class=" container">
+      <div class="navigation desktop">
+        <div class="nav">
+          <img class="nav__logo" src="/images/logo.svg" alt="Logo Shortly">
+          <ul class="nav__list">
             <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Resource</a></li>
           </ul>
-        </nav>
-        <nav>
-          <ul class="nav_list">
-            <li class="nav__item"><a href="#" class="nav__link">Login</a></li>
-            <button class="btn">Sign Up</button>
+        </div>
+
+        <div>
+          <ul class="nav__list desktop">
+            <li class="nav__item"><a class=" nav__link" id="modalBtn" >Sign in</a></li>
+            <button class="btn" >Sign Up</button>
           </ul>
-        </nav>
+        </div>
+        <button class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Navigation Menu Mobile Hamburger menu-->
+
+      <div class="navigation">
+        <div class="nav">
+          <ul class="nav__list nav__mobile " id="nav__mobile">
+            <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Resource</a></li>
+            <span></span>
+            <li class="nav__item"><a href="#" class="nav__link">Login</a></li>
+            <button class="btn btn__mobile">Sign Up</button>
+          </ul>
+        </div>
       </div>
     </nav>
-    <main>
-      <div>
-        <h1>
-          More than just shorter links
-        </h1>
-        <p>
-          Build your brand’s recognition and get detailed insights on how your links are performing.
-        </p>
-        <button class="btn__big">Get Started</button>
-      </div>
-      <div>
-        <img src="/images/illustration-working.svg" alt="">
-      </div>
-    </main>
 
+    <!--  Header Section -->
 
-    <section class="">
-      <div>
-        <input type="text" placeholder="Shorten a link here...">
-        <button class="btn__big__sharp">Shorten It!</button>
-      </div>
-
-
-      <div>
-        <h2>
-          Advanced Statistics
-        </h2>
-        <p>
-          Track how your links are performing across the web with our advanced statistics dashboard.
-        </p>
-      </div>
-
-
-      <div>
+    <div class="container">
+      <main class="main">
+        <div class="main__text">
+          <h1 class="main__title">
+            More than just shorter links
+          </h1>
+          <p class="main__paragraph">
+            Build your brand’s recognition and get detailed insights on how your links are performing.
+          </p>
+          <button class="btn btn__big">Get Started</button>
+        </div>
         <div>
-          <span></span>
-          <h3>
-            Brand Recognition
-          </h3>
-          <p>
-            Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil
-            confidence in your content.
+          <img class="illustration" src="/images/illustration-working.svg" alt="Logo Shortly">
+        </div>
+      </main>
+    </div>
+
+    <!--  Input Container + Button -->
+
+    <div class="shortener">
+      <input class="shortener__input" type="url" name="url" placeholder="Shorten a link here..."
+        title="Shorten a link here..." >
+      <button class="btn btn__big__sharp">Shorten It!</button>
+    </div>
+
+    <!--  Benefits section 3x => Container -->
+
+    <section class="violet_section">
+      <div class=" container">
+        <div class="note">
+          <h2 class="note__headline">
+            Advanced Statistics
+          </h2>
+          <p class="note__paragraph">
+            Track how your links are performing across the web with our advanced statistics dashboard.
           </p>
         </div>
 
-        <div>
-          <span></span>
-          <h3>
-            Detailed Records
-          </h3>
-          <p>
-            Gain insights into who is clicking your links. Knowing when and where people engage with your content helps
-            inform better decisions.
-          </p>
-        </div>
+        <div class="box__container">
+          <div class="box">
+            <div class="boxes">
+              <span class="circle circle__img circle__img__1"></span>
+              <h3>
+                Brand Recognition
+              </h3>
+              <p>
+                Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help
+                instil
+                confidence in your content.
+              </p>
+            </div>
+          </div>
 
-        <div>
-          <span></span>
-          <h3>
-            Fully Customizable
-          </h3>
-          <p>
-            Improve brand awareness and content discoverability through customizable links, supercharging audience
-            engagement.
-          </p>
+          <div class="box">
+            <div class="boxes">
+              <span class="circle circle__img circle__img__2"></span>
+              <h3>
+                Detailed Records
+              </h3>
+              <p>
+                Gain insights into who is clicking your links. Knowing when and where people engage with your content
+                helps
+                inform better decisions.
+              </p>
+            </div>
+          </div>
+
+          <div class=" box">
+            <div class="boxes ">
+              <span class="circle circle__img circle__img__3"></span>
+              <h3>
+                Fully Customizable
+              </h3>
+              <p>
+                Improve brand awareness and content discoverability through customizable links, supercharging audience
+                engagement.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section>
+
+    <!--  Call to action section + Button -->
+
+    <section class="call_to_action">
       <h2>
         Boost your links today
       </h2>
-      <button class="btn__big">Get Started</button>
+      <button class="btn btn__big">Get Started</button>
     </section>
-
-
   </div>
 
+  <!-- Footer and Contact Links -->
 
-  Features
+  <footer>
+    <div class="container">
+      <div class="main-footer">
 
-  Link Shortening
-  Branded Links
-  Analytics
+        <div>
+          <img class="logo-white" src="images/logo.svg" alt="Logo">
+        </div>
 
-  Resources
 
-  Blog
-  Developers
-  Support
+        <div>
+          <ul class="list__one">
+            <li class="list__item">
+              Features
+            </li>
+            <li class="list__item">
+              Link Shortening
+            </li>
+            <li class="list__item">
+              Branded Links
+            </li>
+            <li class="list__item">
+              Analytics
+            </li>
+          </ul>
+        </div>
 
-  Company
 
-  About
-  Our Team
-  Careers
-  Contact
+        <div>
+          <ul class="list__two">
+            <li class="list__item">
+              Resources
+            </li>
+            <li class="list__item">
+              Blog
+            </li>
+            <li class="list__item">
+              Developers
+            </li>
+            <li class="list__item">
+              Support
+            </li>
+          </ul>
+        </div>
 
+
+        <div>
+          <ul class="list__two">
+            <li class="list__item">
+              Company
+            </li>
+            <li class="list__item">
+              About
+            </li>
+            <li class="list__item">
+              Our Team
+            </li>
+            <li class="list__item">
+              Careers
+            </li>
+            <li class="list__item">
+              Contact
+            </li>
+          </ul>
+        </div>
+
+        <!--  Social Icons Font Awesome -->
+
+        <div>
+          <ul class="social-links">
+            <li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instragram.com"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <section id="popup" class="popup modal">
+    <div class="popup__content">
+      <i class="closeBtn fas fa-times"></i>
+      <h2 class="popup__text__heading">Sign in to your account</h2>
+      <form class="popup__content__form" method="POST">
+        <input class="inputs" type="email" name="signin-email" value="" required placeholder="Email Address">
+        <input class="inputs" type="password" name="signin-password" value="" required placeholder="Password">
+        <p class="popup__text">By clicking Sign In, you agree to our
+          <a class="popup__text__link" href="#">Terms of
+            Use</a> and our
+          <a class="popup__text__link" href="#">Privacy Policy</a></p>
+        <button class="btn btn__form" type="submit">Sign in</button>
+      </form>
+      <a class="popup__text__link" href="#">Forgot your password?</a>
+    </div>
+  </section>
 
 </body>
+
+<!--  Scripts -->
+
+<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-replace-svg="nest"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="index.js"></script>
 
 </html>
