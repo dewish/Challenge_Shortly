@@ -29,23 +29,19 @@
     .box:nth-of-type(2)::after {
         width: 55rem;
     }
-
     .illustration {
         background-position: center;
         margin-right: 0rem;
         padding-left: 20rem;
         padding-bottom: 5rem;
     }
-
     .main {
         flex-direction: column-reverse;
         height: max-content;
-
         &__text {
             text-align: center;
             width: 80%;
         }
-
         &__paragraph {
             width: 100%;
         }
@@ -58,7 +54,6 @@
             border-radius: 3rem;
         }
     }
-
     .box__container {
         flex-direction: column;
         align-items: center;
@@ -67,18 +62,15 @@
     .box {
         width: 55%;
     }
-
     .box:nth-of-type(2)::after {
         width: 0.8rem;
         height: 780px;
         top: calc(30%);
         left: 49.5%;
     }
-
     .box:nth-of-type(3) {
         padding-top: 5rem;
     }
-
     .circle {
         align-self: center;
     }
@@ -89,7 +81,6 @@
         flex-direction: column;
         padding: 3rem;
         width: 70%;
-
         &__input {
             margin-bottom: 1.5rem;
             width: 100%;
@@ -109,15 +100,19 @@
         flex-direction: column;
         text-align: center;
     }
-
     .list__item:nth-of-type(1) {
         padding-bottom: 1rem;
         padding-top: 2rem;
     }
-
     .logo-white {
         padding-right: 0rem;
         padding-bottom: 2rem;
+    }
+    .social-links {
+        justify-content: center;
+        margin-right: 3rem;
+        padding-top: 2rem;
+        font-size: 2.5rem;
     }
 }
 
@@ -128,7 +123,6 @@
     .box {
         width: 70%;
     }
-
     .main {
         &__text {
             width: 90%;
@@ -144,18 +138,9 @@
     .note {
         width: 75%;
     }
-
-    .social-links {
-        justify-content: center;
-        margin-right: 3rem;
-        padding-top: 2rem;
-        font-size: 2.5rem;
-    }
-
     .nav__list {
         display: none;
     }
-
     .nav__mobile.show {
         z-index: 10;
         position: absolute;
@@ -169,29 +154,25 @@
         border-radius: 1rem;
         animation-name: modalopen;
         animation-duration: 0.7s;
-
         a {
-            color: #fff;
+            color: $--color-white;
         }
-
         li {
             margin-bottom: 2.5rem;
             margin-right: 0rem;
         }
         span {
-            border-top: 1px solid #fff;
+            border-top: 1px solid $--color-white;
             width: 95%;
             margin: 0 auto;
             margin-bottom: 2.5rem;
             opacity: 0.2;
         }
     }
-
     .btn__mobile {
         padding: 1.2rem;
         width: 100%;
     }
-
     .hamburger {
         display: block;
     }
@@ -205,7 +186,6 @@
         padding: 3rem;
         font-size: 1.8rem;
     }
-
     .main {
         &__text {
             width: 90%;
@@ -225,7 +205,6 @@
 
 @media (max-width: 500px) {
     .illustration {
-        //background: url(/images/illustration-working.svg);
         background-repeat: no-repeat;
         background-position: right;
         height: 80%;

@@ -32,8 +32,6 @@ function outsideClick(e) {
    
 }
 
-
-
 // GET MODAL ELEMENT FOR HAMBURGER MENU
 const hamburger = document.getElementById("hamburger");
 const navUL = document.getElementById("nav__mobile");
@@ -43,23 +41,11 @@ hamburger.addEventListener("click", () => {
     navUL.classList.toggle("show");
 })
 
-// FUNCTION TO CLOSE MODAL IF OUTSIDE CLICK
-function outsideClick(e) {
-    if (e.target == modal) {
-        modal.style.display = 'none';
-    }
-   
-}
 
 
 
 
-
-
-
-
-
-// Animation with Gsap the main content
+//* ANIMATION with Gsap the main content
 gsap.from(".main__text", { opacity: 0, duration: 1, y: -50, delay: 1.4, stragger: 0.6 })
 gsap.from('.illustration', { duration: 1, delay: 0.5, y: 30, opacity: 0 })
 
