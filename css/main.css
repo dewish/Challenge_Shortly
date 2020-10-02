@@ -149,7 +149,7 @@ body {
   padding: 4rem;
   width: 65%;
   background-color: #3b3054;
-  background-image: url(/images/bg-shorten-desktop.svg);
+  background-image: url(../images/bg-shorten-desktop.svg);
   background-size: cover;
   border-radius: 1rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
@@ -262,15 +262,15 @@ body {
 }
 
 .circle__img__1 {
-  background-image: url(/images/icon-brand-recognition.svg);
+  background-image: url(../images/icon-brand-recognition.svg);
 }
 
 .circle__img__2 {
-  background-image: url(/images/icon-detailed-records.svg);
+  background-image: url(../images/icon-detailed-records.svg);
 }
 
 .circle__img__3 {
-  background-image: url(/images/icon-fully-customizable.svg);
+  background-image: url(../images/icon-fully-customizable.svg);
 }
 
 .call_to_action {
@@ -280,7 +280,7 @@ body {
   align-items: center;
   padding: 5rem;
   background-color: #3b3054;
-  background-image: url(/images/bg-boost-desktop.svg);
+  background-image: url(../images/bg-boost-desktop.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

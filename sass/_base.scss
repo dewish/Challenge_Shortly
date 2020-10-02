@@ -160,7 +160,7 @@ body {
     padding: 4rem;
     width: 65%;
     background-color: $--color-primary-violet;
-    background-image: url(/images/bg-shorten-desktop.svg);
+    background-image: url(../images/bg-shorten-desktop.svg);
     background-size: cover;
     border-radius: 1rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
@@ -258,13 +258,13 @@ body {
         background-position: center;
         background-size: 50%;
         &__1 {
-            background-image: url(/images/icon-brand-recognition.svg);
+            background-image: url(../images/icon-brand-recognition.svg);
         }
         &__2 {
-            background-image: url(/images/icon-detailed-records.svg);
+            background-image: url(../images/icon-detailed-records.svg);
         }
         &__3 {
-            background-image: url(/images/icon-fully-customizable.svg);
+            background-image: url(../images/icon-fully-customizable.svg);
         }
     }
 }
@@ -278,7 +278,7 @@ body {
     align-items: center;
     padding: 5rem;
     background-color: $--color-primary-violet;
-    background-image: url(/images/bg-boost-desktop.svg);
+    background-image: url(../images/bg-boost-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
