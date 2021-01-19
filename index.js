@@ -1,53 +1,51 @@
-// GET MODAL ELEMENT
-const modal = document.getElementById("popup");
-// GET MODAL OPEN BUTTOM
-const modalBtn = document.getElementById("modalBtn");
-// GET MODAL CLOSE BUTTOM
-const closeBtn = document.getElementsByClassName("closeBtn")[0];
+//* ANIMATION with Gsap the main content
+gsap.from(".main__text", {
+  opacity: 0,
+  duration: 1,
+  y: -50,
+  delay: 1.4,
+  stragger: 0.6,
+});
+gsap.from(".illustration", { duration: 1, delay: 0.5, y: 30, opacity: 0 });
 
-// LISTEN FOR OPEN CLICK
-modalBtn.addEventListener("click", openModal);
-// LISTEN FOR CLOSE CLICK
-closeBtn.addEventListener("click", closeModal);
-//LISTEN FOR OUTSIDE CLICK
-window.addEventListener("click", outsideClick);
+///////////////////////////////////////
+// Pop up section for SIGN IN //
 
+const popup = document.querySelector(".popup");
+const openBtn = document.querySelector(".signInModal");
+const closeBtn = document.querySelector(".closeBtn");
+const openBtn_mob = document.querySelector(".signInModal_mob");
 
-// FUNCTION TO OPEN MODAL
-function openModal() {
-    modal.style.display = 'block';
+function openPopup() {
+  popup.style.display = "block";
 }
 
-
-// FUNCTION TO CLOSE MODAL
 function closeModal() {
-    modal.style.display = 'none';
+  popup.style.display = "none";
 }
 
-// FUNCTION TO CLOSE MODAL IF OUTSIDE CLICK
+openBtn.addEventListener("click", openPopup);
+closeBtn.addEventListener("click", closeModal);
+window.addEventListener("click", outsideClick);
+openBtn_mob.addEventListener("click", openPopup);
+
+// When the user clicks anywhere outside of the modal, close it
 function outsideClick(e) {
-    if (e.target == modal) {
-        modal.style.display = 'none';
-    }
-   
+  if (e.target == popup) {
+    popup.style.display = "none";
+  }
 }
 
 // GET MODAL ELEMENT FOR HAMBURGER MENU
-const hamburger = document.getElementById("hamburger");
-const navUL = document.getElementById("nav__mobile");
+const hamburger = document.querySelector(".hamburger");
+const navMob = document.querySelector(".nav__mobile");
 
-// Hamburger menu on small screens open X close
-hamburger.addEventListener("click", () => {
-    navUL.classList.toggle("show");
-})
+// hamburger.addEventListener("click", () => {
+//     navMob.classList.toggle("show");
+// });
 
+const openBurgerMenu = function () {
+  navMob.classList.toggle("show");
+};
 
-
-
-
-//* ANIMATION with Gsap the main content
-gsap.from(".main__text", { opacity: 0, duration: 1, y: -50, delay: 1.4, stragger: 0.6 })
-gsap.from('.illustration', { duration: 1, delay: 0.5, y: 30, opacity: 0 })
-
-
-
+hamburger.addEventListener("click", openBurgerMenu);
