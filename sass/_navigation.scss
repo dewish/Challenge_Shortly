@@ -1,0 +1,49 @@
+
+//? Navigation //
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    &__list {
+        display: flex;
+    }
+    &__item {
+        margin-right: 3rem;
+        list-style: none;
+    }
+    &__link {
+        color: $--color-grey-violet;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    &__logo {
+        margin-right: 3rem;
+    }
+}
+
+//? Hamburger Menu / mobile devices //
+
+.hamburger {
+    background-color: transparent;
+    border: none;
+    color: $--color-grey-light;
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+    right: 8%;
+    &:hover {
+        color: $--color-grey-light;
+    }
+}
+.hamburger:focus {
+    outline: none;
+}
+.nav__mobile {
+    display: none;
+}

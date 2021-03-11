@@ -1,0 +1,78 @@
+
+//? Pop up Sign in //
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 30;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(47, 51, 53, 0.531);
+    color: $--color-white;
+    &__content {
+        position: relative;
+        text-align: center;
+        background-color: $--color-popup;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5);
+        width: 65rem;
+        margin: 10% auto;
+        border-radius: 1rem;
+        padding: 6rem 4rem;
+        animation-name: modalopen;
+        animation-duration: 0.7s;
+        &__form {
+            display: grid;
+            grid-gap: 3rem;
+            padding: 4rem 2rem 4rem 2rem;
+        }
+    }
+    &__text {
+        font-size: 1.4rem;
+        &__link {
+            font-size: 1.4rem;
+            color: $--color-btn-primary;
+            text-decoration: none;
+        }
+    }
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.closeBtn {
+    position: absolute;
+    top: 2.2rem;
+    left: 93%;
+    font-size: 3rem;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        color: $--color-btn-primary;
+    }
+}
+.inputs {
+    border-radius: 2rem;
+    border: none;
+    padding: 1.2rem 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    &:focus {
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba(rgb(0, 0, 0), 0.1);
+        border-bottom: 3px solid $--color-btn-primary;
+    }
+
+    &:focus:invalid {
+        border-bottom: 3px solid $--color-primary-red;
+    }
+
+    &::-webkit-input-placeholder {
+        color: $--color-btn-primary;
+    }
+}
