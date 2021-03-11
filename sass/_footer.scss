@@ -1,0 +1,51 @@
+
+
+//? Footer //
+
+footer {
+    background-color: $--color-grey-dark-violet;
+    color: $--color-grey-violet;
+    padding: 0rem 0rem 4rem;
+    font-size: 1.3rem;
+    padding-bottom: 6rem;
+}
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+}
+.list__item {
+    margin-bottom: 0.7rem;
+    list-style: none;
+    cursor: pointer;
+    &:hover,
+    &:active {
+        color: $--color-btn-primary;
+        transition: all 0.2s;
+    }
+}
+.list__item:nth-of-type(1) {
+    padding-bottom: 1.2rem;
+    color: $--color-white;
+    font-size: 1.5rem;
+    cursor: auto;
+}
+.social-links {
+    list-style: none;
+    display: flex;
+    font-size: 2rem;
+}
+.social-links a {
+    color: $--color-white;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-left: 3rem;
+    &:hover,
+    &:active {
+        transition: all 0.1s;
+    }
+}
+.logo-white {
+    padding-right: 15rem;
+    filter: brightness(0) invert(1);
+}
